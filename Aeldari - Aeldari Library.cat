@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="2f0e-dd91-7676-722d" name="Aeldari - Aeldari Library" revision="131" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@FarseerV" authorUrl="https://www.bsdata.net/contact" library="true" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="220" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="2f0e-dd91-7676-722d" name="Aeldari - Aeldari Library" revision="132" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@FarseerV" authorUrl="https://www.bsdata.net/contact" library="true" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="221" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <comment>This library will now be an Aeldari library - all space elf stuff now lives here</comment>
   <readme>This library will now be an Aeldari library - all space elf stuff now lives here</readme>
   <publications>
@@ -368,7 +368,6 @@
   </categoryEntries>
   <entryLinks>
     <entryLink id="46ca-bbfe-7d66-bca2" name="Webway Gate" hidden="false" collective="false" import="true" targetId="aeed-5ff5-9b8c-c788" type="selectionEntry"/>
-    <entryLink id="84c5-41e0-b877-950a" name="Stratagem: Treasures of the Aeldari" hidden="false" collective="false" import="true" targetId="b67d-da32-6a5f-0e22" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="1409-e740-c7c9-3758" name="Yvraine" publicationId="1f62-db93-63f4-4dc7" page="187" hidden="false" collective="false" import="true" type="model">
@@ -2611,6 +2610,7 @@ The selected unit can still perform actions in a turn in which it Advanced or Fe
       </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="bd33-af65-372d-568f" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="144e-d01e-6e6e-f6d4" type="max"/>
       </constraints>
       <categoryLinks>
         <categoryLink id="f295-8460-b568-cdf2" name="New CategoryLink" hidden="false" targetId="c845-c72c-6afe-3fc2" primary="true"/>
@@ -3007,23 +3007,6 @@ The selected unit can still perform actions in a turn in which it Advanced or Fe
           </constraints>
         </entryLink>
         <entryLink id="7a6f-55d4-0f3d-be21" name="Pivotal Roles - Troupe Master" hidden="false" collective="false" import="true" targetId="ce4f-8e83-f6ba-94b7" type="selectionEntryGroup"/>
-        <entryLink id="da53-de3b-1ff4-7eca" name="Stratagem: Favoured of the Laughing God" hidden="true" collective="false" import="true" targetId="c341-72b2-5293-313c" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2ce0-03a1-ec03-76aa" type="greaterThan"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0837-0f5d-21b8-63b9" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="e697-907f-abfa-97c7" name="Stratagem: Champion of the Aeldari" hidden="false" collective="false" import="true" targetId="7753-561b-04d0-7e40" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1ebe-df79-058f-9c05" type="max"/>
-          </constraints>
-        </entryLink>
         <entryLink id="4a4f-92e1-6f3a-05ed" name="Treasures of the Aeldari (Ynnari)" hidden="true" collective="false" import="true" targetId="2f43-12f4-58bb-7802" type="selectionEntryGroup">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
@@ -3033,6 +3016,7 @@ The selected unit can still perform actions in a turn in which it Advanced or Fe
             </modifier>
           </modifiers>
         </entryLink>
+        <entryLink id="59d3-df89-e915-a8b9" name="Character Stratagems (Harlequins)" hidden="false" collective="false" import="true" targetId="b20f-a55e-d6a3-534f" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="e356-c769-5920-6e14" value="4.0"/>
@@ -3262,23 +3246,6 @@ The selected unit can still perform actions in a turn in which it Advanced or Fe
           </constraints>
         </entryLink>
         <entryLink id="474a-2747-1035-fcc6" name="Pivotal Roles - Shadowseer" hidden="false" collective="false" import="true" targetId="5f1d-616d-887e-84c4" type="selectionEntryGroup"/>
-        <entryLink id="23fc-9e44-c34e-c26f" name="Stratagem: Favoured of the Laughing God" hidden="true" collective="false" import="true" targetId="c341-72b2-5293-313c" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2ce0-03a1-ec03-76aa" type="greaterThan"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4b2a-5518-7dbd-3caf" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="8df4-2779-9bec-a78f" name="Stratagem: Champion of the Aeldari" hidden="false" collective="false" import="true" targetId="7753-561b-04d0-7e40" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ca37-178d-707a-83f6" type="max"/>
-          </constraints>
-        </entryLink>
         <entryLink id="756a-1d0c-5361-2b65" name="Treasures of the Aeldari (Ynnari)" hidden="true" collective="false" import="true" targetId="2f43-12f4-58bb-7802" type="selectionEntryGroup">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
@@ -3288,6 +3255,7 @@ The selected unit can still perform actions in a turn in which it Advanced or Fe
             </modifier>
           </modifiers>
         </entryLink>
+        <entryLink id="6e0b-a566-2ef0-5efb" name="Character Stratagems (Harlequins)" hidden="false" collective="false" import="true" targetId="b20f-a55e-d6a3-534f" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="e356-c769-5920-6e14" value="5.0"/>
@@ -3380,7 +3348,7 @@ The selected unit can still perform actions in a turn in which it Advanced or Fe
           </constraints>
         </entryLink>
         <entryLink id="e29f-c871-e18a-7794" name="Warlord Trait (Harlequins)" hidden="false" collective="false" import="true" targetId="90bf-854d-c660-5348" type="selectionEntryGroup"/>
-        <entryLink id="b7c2-ae04-f6fb-3923" name="Enigmas of the Black Library" hidden="false" collective="false" import="true" targetId="16e7-958e-0d9b-8280" type="selectionEntryGroup"/>
+        <entryLink id="b7c2-ae04-f6fb-3923" name="Treasures of the Aeldari (Harlequins)" hidden="false" collective="false" import="true" targetId="16e7-958e-0d9b-8280" type="selectionEntryGroup"/>
         <entryLink id="8016-19d8-e7d4-863f" name="Warlord" hidden="false" collective="false" import="true" targetId="2ce0-03a1-ec03-76aa" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
@@ -3394,23 +3362,6 @@ The selected unit can still perform actions in a turn in which it Advanced or Fe
           </constraints>
         </entryLink>
         <entryLink id="86c6-e8da-9892-8c1b" name="Pivotal Roles - Death Jester" hidden="false" collective="false" import="true" targetId="2963-6e2a-c6e3-e38a" type="selectionEntryGroup"/>
-        <entryLink id="56af-d779-6100-1a1e" name="Stratagem: Favoured of the Laughing God" hidden="true" collective="false" import="true" targetId="c341-72b2-5293-313c" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2ce0-03a1-ec03-76aa" type="greaterThan"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3fe4-388a-09cd-b1f3" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="0c6e-8f1b-bae7-b3e9" name="Stratagem: Champion of the Aeldari" hidden="false" collective="false" import="true" targetId="7753-561b-04d0-7e40" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3448-9574-15ea-2f3b" type="max"/>
-          </constraints>
-        </entryLink>
         <entryLink id="bd75-ea55-22a7-a8f9" name="Treasures of the Aeldari (Ynnari)" hidden="true" collective="false" import="true" targetId="2f43-12f4-58bb-7802" type="selectionEntryGroup">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
@@ -3420,6 +3371,7 @@ The selected unit can still perform actions in a turn in which it Advanced or Fe
             </modifier>
           </modifiers>
         </entryLink>
+        <entryLink id="7ae1-8d5e-9bb4-ccbf" name="Character Stratagems (Harlequins)" hidden="false" collective="false" import="true" targetId="b20f-a55e-d6a3-534f" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="e356-c769-5920-6e14" value="3.0"/>
@@ -26477,6 +26429,31 @@ Each time an attack is made by a model with this attibute, if that model&apos;s 
             <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c341-72b2-5293-313c" type="greaterThan"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6771-6ab3-1672-6a39" type="equalTo"/>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7753-561b-04d0-7e40" type="equalTo"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2ce0-03a1-ec03-76aa" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2ce0-03a1-ec03-76aa" type="greaterThan"/>
+                        <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e77a-cc54-efcf-a09a" type="greaterThan"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="459b-216d-93e6-ebe7" type="max"/>
@@ -28160,11 +28137,22 @@ Until the start or your next Psychic phase, subtract 2 from the Leadership chara
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="858e-1bd9-61c9-6dcf" type="equalTo"/>
-                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="93a5-5452-136c-f12e" type="equalTo"/>
-              </conditions>
+            <conditionGroup type="or">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e77a-cc54-efcf-a09a" type="greaterThan"/>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c470-54ac-0863-8848" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c470-54ac-0863-8848" type="equalTo"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="93a5-5452-136c-f12e" type="equalTo"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="858e-1bd9-61c9-6dcf" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </conditionGroup>
           </conditionGroups>
         </modifier>
@@ -31677,6 +31665,61 @@ If that attack has an unmodified Damage characteristic of 1, add 1 to any armour
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="86ed-ed49-5aee-c04d" type="min"/>
           </constraints>
         </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="b20f-a55e-d6a3-534f" name="Character Stratagems (Harlequins)" hidden="false" collective="false" import="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ae09-117e-a6fa-316b" type="equalTo"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e77a-cc54-efcf-a09a" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ae09-117e-a6fa-316b" type="greaterThan"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <entryLinks>
+        <entryLink id="41fd-5ff8-d146-5968" name="Stratagem: Champion of the Aeldari" hidden="false" collective="false" import="true" targetId="7753-561b-04d0-7e40" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="de3b-a9ff-8974-a1ae" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="391d-274e-f73b-6cd9" name="Stratagem: Favoured of the Laughing God" hidden="false" collective="false" import="true" targetId="c341-72b2-5293-313c" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ae09-117e-a6fa-316b" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e77a-cc54-efcf-a09a" type="greaterThan"/>
+                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="90bf-854d-c660-5348" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f8fc-14ef-9d5e-94b3" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="56e8-5cf7-71c5-3ad9" name="Stratagem: Warlord Trait" hidden="false" collective="false" import="true" targetId="6771-6ab3-1672-6a39" type="selectionEntry"/>
+        <entryLink id="1cdf-7558-9f84-db22" name="Stratagem: Relic" hidden="false" collective="false" import="true" targetId="c470-54ac-0863-8848" type="selectionEntry"/>
+        <entryLink id="3a6f-5ff8-ed9f-f3fb" name="Stratagem: Treasures of the Aeldari" hidden="false" collective="false" import="true" targetId="b67d-da32-6a5f-0e22" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
