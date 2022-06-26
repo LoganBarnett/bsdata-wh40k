@@ -88,6 +88,7 @@
     <entryLink id="83b5-f2b4-6afa-f598" name="Hornets" hidden="false" collective="false" import="true" targetId="ae08-dbdb-00a4-91c3" type="selectionEntry"/>
     <entryLink id="3f63-1e50-c504-040c" name="Wraithseer" hidden="false" collective="false" import="true" targetId="e554-ea88-ace6-b9ee" type="selectionEntry"/>
     <entryLink id="01fc-3ad5-7b85-6ad9" name="Shadow Spectres" hidden="false" collective="false" import="true" targetId="367c-f42f-e2ef-9a4d" type="selectionEntry"/>
+    <entryLink id="19dd-f11e-d3c6-0753" name="Amallyn Shadowguide" hidden="false" collective="false" import="true" targetId="4c8b-cc5a-7f81-b1ea" type="selectionEntry"/>
     <entryLink id="8cfe-8b5c-9273-5f40" name="Specialist Detachment" hidden="false" collective="false" import="true" targetId="3631-6061-c829-154e" type="selectionEntry"/>
     <entryLink id="8cd5-a883-e9ec-0d3c" name="Autarch" hidden="false" collective="false" import="true" targetId="9d2f-3d02-5734-6cec" type="selectionEntry"/>
     <entryLink id="e991-a1f4-7f16-4e55" name="Autarch Skyrunner" hidden="false" collective="false" import="true" targetId="efe1-2d6f-8511-2507" type="selectionEntry"/>
